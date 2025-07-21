@@ -1,0 +1,310 @@
+/* ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ *//* ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ *//* ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ */
+/* ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ COULEURS ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ */
+/* ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ *//* ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ *//* ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ */
+
+/* ▬▬▬ white ▬▬▬ */
+/* Hex #FFFFFF ▬▬ rgb(255, 255, 255) ▬▬ rgba(255, 255, 255, 1) */
+/* ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ *//* ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ */
+
+/* ▬▬▬ black ▬▬▬ */
+/* Hex #000000 ▬▬ rgb(0, 0, 0) ▬▬ rgba(0, 0, 0, 1) */
+/* ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ *//* ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ */
+
+/* ▬▬▬ red ▬▬▬ */
+/* Hex #FF0000 ▬▬ rgb(255, 0, 0) ▬▬ rgba(255, 0, 0, 1) */
+/* ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ *//* ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ */
+
+/* ▬▬▬ Dark Slate Gray ▬▬▬ */
+/* Hex #2F4F4F ▬▬ rgb(47, 79, 79) ▬▬ rgba(47, 79, 79, 1) */
+/* ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ *//* ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ */
+
+/* ▬▬▬ Teal Gray ▬▬▬ */
+/* Hex #859A9A ▬▬ rgb(133, 154, 154) ▬▬ rgba(133, 154, 154, 1) */
+/* ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ *//* ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ */
+
+/* ▬▬▬ Light Gray ▬▬▬ */
+/* Hex #E7E9E9 ▬▬ rgb(231, 233, 233) ▬▬ rgba(231, 233, 233, 1) */
+/* ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ *//* ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ */
+
+/* ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ *//* ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ *//* ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ */
+/* ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ COULEURS ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ */
+/* ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ *//* ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ *//* ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ */
+
+/* GENERAL */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+a {
+    text-decoration: none;
+    color: white;
+}
+a:hover {
+    color: red;
+}
+
+body {
+    font-family: "Tinos", serif;
+    background-image: url(../img/8.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+ul {
+    text-align: left;
+    list-style-type: none;
+}
+
+
+/* ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ */
+/* ▬▬▬▬ BARRE DE NAVIGATION ▬▬▬▬ */
+/* ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ */
+.navbar {
+    background-color: rgba(133, 154, 154, 0.5);
+    width: 90%;
+    border-radius: 40px;
+    margin: 20px auto 25px auto;
+    text-align: center;
+}
+
+.navbar-toggler {
+    background-color: #859A9A;
+    border: 1px solid #2F4F4F;
+    margin: auto;
+}
+
+.navbar-toggler-icon {
+    background-color: #859A9A;
+}
+
+.nav-icon {
+    font-size: 2em;
+    margin-right: 10px;
+}
+
+.dropdown-menu {
+    background-color: #E7E9E9;
+    border: 2px solid #2F4F4F;
+}
+
+.dropdown-item:hover {
+    color: #E7E9E9;
+    background-color: #2F4F4F;
+}
+
+.switch-flag {
+    width: 3em;
+    background-color: #E7E9E9;
+    border: 2px solid #2F4F4F;
+    border-radius: 30px;
+}
+
+.switch-flag:hover {
+    background-color: #859A9A;
+}
+
+
+@media (max-width: 991.98px) {
+
+    /* POUR EVITER LE COLLAPSE DU BOUTON DE CHANGEMENT LANGUE */
+    .navbar-brand {
+        order: 2;
+        margin-left: auto;
+    }
+
+    .navbar-toggler {
+        order: 1;
+        margin-right: auto;
+    }
+
+    .navbar-collapse {
+        order: 3;
+    }
+}
+
+/* ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ */
+/* ▬▬▬▬▬▬▬ PARTIE GAUCHE ▬▬▬▬▬▬▬ */
+/* ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ */
+
+
+.left-side {
+    background-color: #2F4F4F;
+    text-align: center;
+    color: white;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.photo-profil {
+    width: 80%;
+    border-radius: 100%;
+    margin-top: 20px;
+    border: 8px solid white;
+}
+
+.left-side h1,
+.left-side h4 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.left-side h1{
+    margin: 30px;
+    font-size: 2.5em;
+}
+
+.left-side h5 {
+    color: black;
+    font-size: 1.5em;
+    background-color: #E7E9E9;
+    border-radius: 20px;
+    width: 90%;
+    margin: 30px auto 30px auto;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
+}
+
+.left-side h6 {
+    margin-left: 30px;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+.contact-icon {
+    font-size: 1.5em;
+    color: white;
+    margin: 20px 50px 0 0;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+
+.lang-icon {
+    width: 30%;
+    margin: 20px;
+}
+
+.car-icon {
+    font-size: 4em;
+}
+
+.school-icon {
+    font-size: 1.5em;
+    margin-top: 20px;
+
+}
+
+.list-item {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #859A9A;
+}
+
+.left-side p {
+    text-align: center;
+    font-size: 1em;
+    font-style: italic;
+
+}
+
+
+/* ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ */
+/* ▬▬▬▬▬▬▬ PARTIE DROITE ▬▬▬▬▬▬▬ */
+/* ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ */
+
+.right-side {
+    background-color: #E7E9E9;
+    color: black;
+    border-radius: 0px 15px 15px 0px;
+}
+
+.right-side h4 {
+    color: black;
+    font-size: 2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 60px;
+    margin-left: 20px;
+}
+
+.modal-content {
+    background-color: #E7E9E9;
+    border: #2F4F4F 4px solid;
+}
+
+.modal-title {
+    padding-left: 10px;
+    text-align: center;
+}
+
+.img-modal {
+    width: 40%;
+    height: auto;
+}
+
+.modal-icon {
+    padding-right: 10px;
+}
+
+.right-side h5 {
+    color: black;
+    font-weight: bold;
+    margin: 10px auto 0px auto;
+    text-transform: uppercase;
+}
+
+.right-side h6 {
+    font-style: italic;
+    margin: 0;
+}
+
+.date {
+    display: flex;
+    justify-content: end;
+    margin-right: 30px;
+    font-size: 1.2em;
+}
+
+.right-side p {
+    font-size: 1.2em;
+    margin-left: 15px;
+}
+
+.header-exp {
+    background-color: rgba(133, 154, 154, 0.2);
+    padding: 10px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.hobb-icon {
+    font-size: 3em;
+}
+
+.right-side a {
+    color: black;
+}
+
+.right-side a:hover {
+    color: red;
+}
+
+.intro {
+    font-size: 1.5em !important;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+}
+
+.right-side ul {
+    padding: 0px;
+}
+
+/* ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ */
+/* ▬▬▬▬▬▬▬▬▬▬ FOOTER ▬▬▬▬▬▬▬▬▬▬▬ */
+/* ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ */
+
+.bi-arrow-up-square-fill {
+    font-size: 50px;
+    color: black;
+    margin-top: 50px;
+}
